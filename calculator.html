@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<head>
+<style>
+    body{background:aqua;
+      text-align:center;}
+      input{width:50%;												 
+			color:goldenrod;
+			border:2px solid #2386CA;					 
+			padding:4px;					 
+			font-weight:bold;
+			border-radius:9px;
+            text-align:center
+			}
+            span{color:goldenrod}
+
+            button{width:5%;												 
+			color:goldenrod;
+			border:2px solid #2386CA;					 
+			padding:4px;					 
+			font-weight:bold;
+			border-radius:0px 9px 0px;
+            text-align:center;
+        background: thistle;}
+            button:hover{background-color: hotpink;}
+
+</style>
+</head>
+
+<body>
+<input id="no.1" placeholder="insert number">
+<br /><br />
+<span id="aware"></span>
+<br /><br />
+<input id="no.2" placeholder="insert number">
+<br /><br />
+<span id="ness"></span>
+<br /><br />
+<button onclick="first()">+</button>
+<button onclick="second()">-</button>
+<button onclick="third()">*</button>
+<button onclick="fourth()">/</button>
+<button onclick="fifth()">%</button>
+<button onclick="sixth()">**</button>
+
+<script>
+
+function first(){
+    let a=Number(document.getElementById("no.1").value)
+    let b=Number(document.getElementById("no.2").value)
+    let c=a+b
+    if(isNaN(a)&&(b)){
+                alert("Not a number")
+            }
+    else{document.getElementById("aware").innerHTML = " +";
+        document.getElementById("ness").innerHTML = "= " + c;}
+    }
+
+    function second(){
+    let a=Number(document.getElementById("no.1").value)
+    let b=Number(document.getElementById("no.2").value)
+    let c=a-b
+    if(isNaN(a)&&(b)){
+                alert("invalid")
+            }
+    else{document.getElementById("aware").innerHTML = " -";
+        document.getElementById("ness").innerHTML = "= " + c;}
+    }
+
+    function third(){
+    let a=Number(document.getElementById("no.1").value)
+    let b=Number(document.getElementById("no.2").value)
+    let c=a*b
+    if(isNaN(a)&&(b)){
+                alert("Not a number")
+            }
+    else{document.getElementById("aware").innerHTML = " *";
+        document.getElementById("ness").innerHTML = "= " + c;}
+    }
+
+    function fourth(){
+    let a=Number(document.getElementById("no.1").value)
+    let b=Number(document.getElementById("no.2").value)
+    let c=a/b
+    if(isNaN(a)&&(b)){
+                alert("Not a number")
+            }
+    else{document.getElementById("aware").innerHTML = " /";
+        document.getElementById("ness").innerHTML = "= " + c;}
+    }
+
+    function fifth(){
+    let a=Number(document.getElementById("no.1").value)
+    let b=Number(document.getElementById("no.2").value)
+    let c=a%b
+    if(isNaN(a)&&(b)){
+                alert("invalid")
+            }
+    else{document.getElementById("aware").innerHTML = " %";
+        document.getElementById("ness").innerHTML = "= " + c;}
+    }
+
+    function sixth(){
+    let a=Number(document.getElementById("no.1").value)
+    let b=Number(document.getElementById("no.2").value)
+    let c=a**b
+    if(isNaN(a)&&(b)){
+                alert("Not a number")
+            }
+    else{document.getElementById("aware").innerHTML = " **";
+        document.getElementById("ness").innerHTML = "= " + c;}
+    }
+
+</script>
+
+        
+
+    
+
+    
+</body>
+</html>
