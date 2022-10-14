@@ -23,6 +23,28 @@
         background: thistle;}
             button:hover{background-color: hotpink;}
 
+            div{border:3px solid bisque;
+             margin: 0px auto;
+             width:30%;
+             padding: 17px;
+             margin-top: 6rem;
+             background-color: bisque;
+             border-radius: 0.9rem; 
+             box-shadow: 4px 4px 4px grey;
+            }
+            .ted{width:25%;												 
+			color:goldenrod;
+			border:2px solid #2386CA;					 
+			padding:4px;					 
+			font-weight:bold;
+			border-radius:0px 9px 0px;
+            text-align:center;
+        background: rgb(186, 82, 186);}
+        h1{font-weight: 400;
+            color: blueviolet;
+            font-size: 25px;
+        }
+
 </style>
 </head>
 
@@ -42,7 +64,39 @@
 <button onclick="fifth()">%</button>
 <button onclick="sixth()">**</button>
 
-<script>
+
+<div>
+    <label>Amount to Invest</label><br />
+    <input id="bo"  /><br /><br />
+    <label>Period of Investment</label>
+				<select id="om" >
+					<option selected>....</option>
+					<option value="1"> 1 month </option>
+					<option value="2">2 month </option>
+					<option value="3"> 3 month </option>
+					<option value="4"> 4 month </option>
+					<option value="5"> 5 month </option>
+					<option value="6"> 6 month</option>
+                    <option value="7"> 7 month</option>
+                    <option value="8"> 8 month</option>
+                    <option value="9"> 9 month</option>
+                    <option value="10">10 month</option>
+                    <option value="11">11 month</option>
+                    <option value="12">12 month</option>                 
+				</select><br /><br />
+                <button class="ted" onclick="a()">total amount</button>
+                <h1 id="wow"></h1>
+				
+            </div>
+
+
+
+    <script>
+       function a(){let a= Number(document.getElementById("bo").value);
+                    let b=10/100 *a;
+                    let c=document.getElementById("om").value;
+                    document.getElementById("wow").innerHTML =b*c+a
+                    }
 
 function first(){
     let a=Number(document.getElementById("no.1").value)
