@@ -14,6 +14,15 @@
 		
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 		<style>
+			@media screen and (max-width:768px){
+				.ht{display: none;
+					}
+					.wer{width: 100%;}
+
+					
+			
+				}	
+				@media screen and (max-width:1200px){.wer{display: none;}}
 			button.wes{background:white; 
 						color:black; 
 						padding:13px; 
@@ -49,16 +58,23 @@
 						li.for:hover{text-decoration:underline;}
 						h6.pay{color:#B8B8B8;}
 						li.nav-item{font-weight: bold;}
-						.wer{background:black;
+						.er{background:black;
 							color:white;
 							font-weight:bold;
 							border-radius:5px;
 							padding:8px;
+							position:relative; 
+							right:20
 							}
-						.wer:hover{background:rgb(219, 27, 27);
+						.er:hover{background:rgb(219, 27, 27);
 								border:2px solid rgb(219, 27, 27);
 								color:black
 							}
+							#tod{position:relative; 
+					float:left;
+					width:20px;
+					height:50px;
+					border: 0px;}
 		</style>
 	</head>
 	<body>
@@ -66,9 +82,8 @@
 		<nav class="navbar   fixed-top navbar-expand-lg">
 			<div class="container-fluid" style="background:white; padding:1.3rem 8rem;margin-top: -2rem;" >
 			  <a class="navbar-brand" href="#"><img src="asana/to.png" width="90%" height="auto" /></a>
-			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			  </button>
+				<span class="navbar-toggler-icon navbar-toggler" id="tod" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"></span>
+			  
 			  <div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav">
 				  <li class="nav-item">
@@ -86,11 +101,10 @@
 				  <li class="nav-item">
 					<a class="nav-link" href="calculator.html">JAVASCRIPT</a>
 				  </li>
-				</ul>
-		 	 </div>
-			  <form class="d-flex" role="search">
+				</ul>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+		 	   <form class="d-flex" role="search">
 				<ul class="navbar-nav">
-				<i class="bi bi-globe" style="font-size: 1.5rem;"></i>
+				<i class="bi bi-globe ht" style="font-size: 1.5rem;"></i>
 				&#160;&#160;&#160;&#160;&#160;&#160;
 				<li class="nav-item">
 					<a class="nav-link" href="#">Contact Sales</a>
@@ -100,9 +114,10 @@
 					<a class="nav-link" href="#">login </a>
 				  </li>
 				</ul>
-				&#160;&#160;&#160;&#160;&#160;&#160;
-				<button class="wer">Get Started</button>
-			  </form>
+				&#160;&#160;&#160;&#160;&#160;&#160;<br />
+			 </form>
+			</div>
+			<button class="er" >Get Started</button>
 			</div>
 		  </nav>
 
